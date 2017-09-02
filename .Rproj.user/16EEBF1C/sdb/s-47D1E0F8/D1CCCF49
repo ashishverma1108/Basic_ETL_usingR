@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyUI(fluidPage(\n\n  # Application title\n  titlePanel(\"Select the files to be merged\"),\n\n  # Sidebar with a slider input for number of bins\n  sidebarLayout(\n    sidebarPanel(\n      fileInput(\"csvs\", label = \"upload csvs here\",\n                multiple = TRUE)\n      ),\n\n    # Show a plot of the generated distribution\n    mainPanel(textOutput(\"count\")\n    )\n  )\n))\n",
+    "created" : 1504319063669.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1730750973",
+    "id" : "D1CCCF49",
+    "lastKnownWriteTime" : 1504326260,
+    "last_content_update" : 1504326260656,
+    "path" : "~/workspace/Basic_ETL_usingR/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n\nsample.data.1 <- read.csv(\"Most-Recent-Cohorts-Scorecard-Elements.csv\", header=T)\n\n\nsummary(sample.data.1)\n",
+    "created" : 1504320900117.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "404884633",
+    "id" : "3EEC6E33",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1504321038624,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

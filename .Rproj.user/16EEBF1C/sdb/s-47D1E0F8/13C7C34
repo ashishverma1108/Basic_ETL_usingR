@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(data.table)\nshinyServer(function(input, output) {\n\n # output$distPlot <- renderPlot({\n\n    # generate bins based on input$bins from ui.R\n #    x    <- faithful[, 2]\n#    bins <- seq(min(x), max(x), length.out = input$bins + 1)\n\n    # draw the histogram with the specified number of bins\n #   hist(x, breaks = bins, col = 'darkgray', border = 'white')\n\n#  })\n  mycsvs<-reactive({\n    rbindlist(lapply(input$csvs$datapath, fread),\n              use.names = TRUE, fill = TRUE)\n  })\n  output$count <- renderText(nrow(mycsvs()))\n  \n \n})\n",
+    "created" : 1504319063813.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "544559838",
+    "id" : "13C7C34",
+    "lastKnownWriteTime" : 1504326399,
+    "last_content_update" : 1504326399917,
+    "path" : "~/workspace/Basic_ETL_usingR/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
